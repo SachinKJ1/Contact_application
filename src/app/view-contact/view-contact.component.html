@@ -1,0 +1,29 @@
+<div
+  class="d-flex justify-content-center align-items-center"
+  style="height: 85vh"
+>
+  <div class="shadow d-flex p-4" style="width: 37rem">
+    <div
+      class="card-header pe-4 d-flex flex-column gap-4 justify-content-evenly align-items-center"
+    >
+      <img
+        width="150px"
+        height="150px"
+        style="border-radius: 50%"
+        [src]="contact.photo"
+        alt="User img"
+      />
+      <h5 class="card-title">{{ contact.name }}</h5>
+    </div>
+    <div class="card-body">
+      <ul class="list-group">
+        <li class="list-group-item">Id : {{ contact.id }}</li>
+        <li class="list-group-item">Mobile : {{ contact.mobile }}</li>
+        <li class="list-group-item">Email : {{ contact.email }}</li>
+        <li class="list-group-item">Company : {{ contact.company }}</li>
+        <li class="list-group-item">Title : {{ contact.title }}</li>
+        <li class="list-group-item">Group : {{ group }}</li>
+      </ul>
+    </div>
+  </div>
+</div>
